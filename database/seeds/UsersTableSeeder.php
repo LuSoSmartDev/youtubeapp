@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 use App\User;
+use Illuminate\Support\Str;
+
 class UsersTableSeeder extends Seeder
 {
     /**
@@ -25,6 +27,7 @@ class UsersTableSeeder extends Seeder
             'name' => 'Administrator',
             'email' => 'admin@test.com',
             'password' => $password,
+            'user_token'=>Str::random(32),
         ]);
 
         // And now let's generate a few dozen users for our app:
@@ -33,6 +36,7 @@ class UsersTableSeeder extends Seeder
                 'name' => $faker->name,
                 'email' => $faker->email,
                 'password' => $password,
+                'user_token'=>Str::random(32),
             ]);
         }
     }
