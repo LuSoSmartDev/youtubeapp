@@ -14,9 +14,5 @@ use App\Article;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::get('emails', 'EmailAccountController@index');
-Route::get('articles/{article}', 'ArticleController@show');
-Route::post('articles', 'ArticleController@store');
-Route::put('articles/{article}', 'ArticleController@update');
-Route::delete('articles/{article}', 'ArticleController@delete');
+
 Route::get('getemail','EmailAccountController@getrandom');
