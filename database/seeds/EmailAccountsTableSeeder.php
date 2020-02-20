@@ -21,6 +21,7 @@ class EmailAccountsTableSeeder extends Seeder
         "xtr3m333@gmail.com |titafdgrhr221|sadjyaernte12.12cuong@gmail.com"];
     public function run()
     {
+        EmailAccount::truncate();
         foreach($this->list_email_strs as $items){
             $word = explode("|", $items);
             EmailAccount::create([

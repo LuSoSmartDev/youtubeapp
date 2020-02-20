@@ -14,7 +14,7 @@ class UserVideoTableSeeder extends Seeder
         UVideo::truncate();
         
         UVideo::create([
-            'video_id'=>"",
+            'video_id'=>"m--Cf0TXzv8",
             'title'=>"Vợ lính việt nam cộng hòa trước 1975",
             'author'=>"clip xa hoi",
             'duration'=>"11:33"

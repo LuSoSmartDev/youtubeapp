@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\UVideoController;
 use App\Http\Controllers\EmailAccountController;
+
 use App\Article;
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,4 @@ use App\Article;
 */
 
 Route::get('getemail','EmailAccountController@getrandom');
+Route::get('getvideo','UVideoController@get_random_video');
