@@ -17,7 +17,7 @@ class CreateEmailsTable extends Migration
             $table->bigIncrements('id');
             $table->string('email');
             $table->string('password');
-            $table->string('recover_email');
+            $table->string('recover_email')->nullable();
             $table->timestamps();
         });
     }

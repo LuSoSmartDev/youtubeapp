@@ -23,4 +23,5 @@ class ArticlesTableSeeder extends Seeder
             ]);
         }
     }
+    
 }
